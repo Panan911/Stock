@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 """
 Created on Wed Apr  4 15:27:26 2018
@@ -28,28 +27,28 @@ def get_data():
                 stat_date = str(time)
                 stock_id = str1[0].strip()
                 stock_name = str1[1].strip()
-                chg = str1[2].strip()
-                new_trade = str1[3].strip()
-                change = str1[4].strip()
+                chg = str1[2].strip().replace('--',"")
+                new_trade = str1[3].strip().replace('--',"")
+                change = str1[4].strip().replace('--',"")
                 vol = str1[5].strip()
-                exchange = str1[6].strip()
-                open_day = str1[7].strip()
-                high = str1[8].strip()
-                low = str1[9].strip()
-                last_close = str1[10].strip()
+                exchange = str1[6].strip().replace('--',"")
+                open_day = str1[7].strip().replace('--',"")
+                high = str1[8].strip().replace('--',"")
+                low = str1[9].strip().replace('--',"")
+                last_close = str1[10].strip().replace('--',"")
                 amount = str1[11].strip()
                 industry = str1[12].strip()
                 num_stock_lt = str1[13].strip()
                 mv_stock_lt = str1[14].strip()
                 mv_stock = str1[15].strip()
                 Ipo_Date = str1[16].strip()
-                str_point = str1[17].strip()
+                str_point = str1[17].strip().replace('--',"")
                 vit = str1[18].strip()
-                Rise_Cnt = str1[19].strip()
+                Rise_Cnt = str1[19].strip().replace('--',"")
                 Num_Stock = str1[20].strip()
-                Amplitude = str1[21].strip()
+                Amplitude = str1[21].strip().replace('--',"")
                 Area = str1[22].strip()
-                Beta = str1[23].strip()
+                Beta = str1[23].strip().replace('--',"")
                 data_str = stat_date + ',' + stock_id + ',' + stock_name + ','\
                     + chg + ',' + new_trade + ',' + change + ',' + vol + ',' +\
                     exchange + ',' + open_day + ',' + high + ',' + low + ',' +\
